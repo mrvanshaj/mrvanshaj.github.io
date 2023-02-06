@@ -1,0 +1,36 @@
+#home .Primary {
+    font-size: 5.5rem;
+}
+
+#home .container .content p {
+    font-size: 1.5rem;
+}
+
+#home .container .image img {
+    width: 100px;
+    height: 100px;
+}
+
+#About .content h1 {
+    font-size: 5rem;
+
+}
+#About .content p {
+    font-size: 1.5rem;
+}
+#tours .cards .item{
+height: 250px;
+}
+
+#tours .cards {
+    grid-template-columns: 1fr 1fr;
+    
+}
+
+#tours .cards .item h1 {
+    text-shadow: 2px 2px 5px black;
+    margin-top: 30%;
+    text-align: center;
+    color: white;
+    transition: all 1s;
+}

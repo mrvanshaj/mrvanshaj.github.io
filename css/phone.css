@@ -1,0 +1,17 @@
+
+#sections ul li {
+    font-size: 2rem;
+}
+
+#home .container .content {
+    display: block;
+}
+
+#About .content p {
+    margin: 20px 20px;
+}
+
+
+footer .content .back-to-top {
+    font-size: 1rem;
+}

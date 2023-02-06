@@ -1,0 +1,476 @@
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+/* Navigation Bar */
+#navbar {
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+}
+
+#navbar::before {
+    content: "";
+    background-color: rgb(0, 0, 0, 0.8);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -5;
+}
+
+
+#logo {
+    margin: 10px 23px;
+}
+
+#logo img {
+    height: 70px;
+    width: 70px;
+    border-radius: 100px;
+
+}
+
+#sections {
+    margin: 2px;
+    width: 100%;
+
+}
+
+#sections ul {
+    display: flex;
+}
+
+#sections ul li {
+    list-style: none;
+    font-size: 2.5rem;
+    text-shadow: 2px 2px rgb(25, 25, 112);
+    font-family: 'Bebas Neue', cursive;
+}
+
+#sections ul li a {
+    color: white;
+    margin: 2px;
+    text-decoration: none;
+    display: block;
+    padding: 3px 20px;
+    text-shadow: none;
+    border-radius: 25px;
+}
+
+#sections ul li a:hover {
+    background-color: white;
+    color: rgb(21, 18, 65);
+}
+
+/* Home */
+
+#home {
+    padding: 3%;
+    height: 100%;
+    background-color: rgb(121, 182, 228);
+}
+
+#home h1 {
+    color: rgb(21, 18, 65);
+    font-size: 6rem;
+    text-align: center;
+    padding: 5px 3px;
+    /* margin-top: 1%; */
+
+}
+
+/* Home Page Container */
+#home .container {
+    height: auto;
+}
+
+#home .container .image {
+    padding: 2px 3px;
+    margin: 30px 2px;
+    text-align: center;
+}
+
+#home .container .image img {
+    width: 150px;
+    height: 150px;
+    background-color: white;
+    border-radius: 100px;
+    margin: 0px 10px;
+}
+
+#home .container .content {
+    align-items: center;
+    display: flex;
+    margin: 2px 3px;
+}
+
+#home .container .content p {
+    font-family: 'Unbounded', cursive;
+    margin: 2px 3px;
+    font-size: 2rem;
+    padding: 20px 20px;
+    margin: 5px 3px;
+    text-shadow: 2px 2px 10px white;
+    color: rgb(32, 73, 106);
+    text-align: center;
+}
+
+/* About us */
+
+#About {
+    padding-top: 10%;
+    padding-bottom:10% ;
+    height: 100%;
+    background-color: rgb(245,206,173);
+
+}
+
+#About .content h1 {
+    padding-bottom: 50px;
+    color: rgb(90 6 6);
+    font-size: 7rem;
+    text-align: center;
+
+}
+
+#About .content p {
+    font-family: 'Unbounded', cursive;
+    margin: 20px 170px;
+    padding: 1px 10px;
+    font-size: 2rem;
+    color: rgb(138 41 41);
+    text-shadow: 2px 2px 10px rgb(255, 255, 255);
+    text-align: center;
+}
+
+/* Tours */
+#tours {
+    padding-top: 6%;
+    padding-bottom:10px ;
+    background-color: aquamarine;
+    height: 100%;
+}
+
+#tours .content h1 {
+    padding-bottom: 20px;
+    color: rgb(80 67 1);
+    font-size: 7rem;
+    text-align: center;
+}
+
+#tours .cards {
+    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 2rem;
+    margin-left: 10px;
+    margin-right: 30px;
+}
+
+#tours .cards .item {
+    padding: 10px 10px;
+    height: 280px;
+    width: 100%;
+    background-size: cover;
+    border-radius: 20px;
+    font-size: 1.5rem;
+    text-align: center;
+    transition: all 1s;
+}
+
+#tours .cards .item h1 {
+    text-shadow: 2px 2px 5px black;
+    margin-top: 50%;
+    text-align: center;
+    color: white;
+    transition: all 1s;
+}
+
+#tours .cards .item p {
+    display: none;
+    transition: all 1s;
+   font-size: 1rem;
+
+}
+
+/* CARDS HOVER */
+
+#tours .cards .item:hover {
+    background-image: none;
+
+}
+
+#tours .cards .item:hover h1 {
+    margin: 20px 2px;
+}
+
+#tours .cards .item:hover p {
+    display: contents;
+    font-family: 'Unbounded', cursive;
+
+}
+
+/* CARDS */
+
+#item1 {
+    background-image: url("../img/kolkata.webp");
+}
+
+#item1:hover {
+    background-color: rgb(224, 83, 103, 0.6);
+}
+
+/* ----------------CARD 2----------------- */
+
+#item2 {
+    background-image: url("../img/Australia.webp");
+}
+
+#item2:hover {
+    background-color: rgb(36, 61, 99, 0.6);
+}
+
+/* ----------------CARD 3----------------- */
+
+#item3 {
+    background-image: url("../img/Dubai.webp");
+}
+
+#item3:hover {
+    background-color: rgb(39, 62, 65, 0.6);
+}
+
+/* ----------------CARD 4----------------- */
+
+#item4 {
+    background-image: url("../img/New\ Zealand.webp");
+}
+
+#item4:hover {
+    background-color: rgb(89, 87, 14, 0.6);
+}
+
+/* ----------------CARD 5----------------- */
+
+#item5 {
+    background-image: url("../img/Bali.webp");
+}
+
+#item5:hover {
+    background-color: rgb(251, 248, 217, 0.9);
+}
+
+/* ----------------CARD 6----------------- */
+
+#item6 {
+    background-image: url("../img/London.webp");
+}
+
+#item6:hover {
+    background-color: rgb(193, 198, 208, 0.9);
+}
+
+/* ----------------CARD 7----------------- */
+
+#item7 {
+    background-image: url("../img/Maldives.webp");
+}
+
+#item7:hover {
+    background-color: rgb(25, 139, 135, 0.6);
+}
+
+/* ----------------CARD 8   ----------------- */
+
+#item8 {
+    background-image: url("../img/Singapore.webp");
+}
+
+#item8:hover {
+    background-color: rgb(18, 13, 30, 0.4);
+}
+
+#tours .cards a {
+    text-decoration: none;
+    color: black;
+}
+
+
+/* Contact Us */
+#Contact-us {
+    background-color: yellow;
+    padding-top: 8%;
+    height: 100%;
+}
+
+#Contact-us h1 {
+    padding-bottom: 20px;
+    margin-bottom: 50px;
+    color: rgb(1 60 0);
+    font-size: 7rem;
+    text-align: center;
+}
+
+#Contact-us .content {
+    display: flex;
+}
+
+#Contact-us .content .image {
+    padding-left: 35px;
+    width: 55%;
+}
+
+#Contact-us .content .image img {
+    height: 500px;
+    width: 100%;
+
+}
+
+#contact-box {
+    height: 500px;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+
+#contact-box input,
+#contact-box textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+}
+
+#contact-box form {
+    width: 80%;
+}
+
+#contact-box label {
+    font-size: 1.3rem;
+}
+
+#contact-box .button {
+    text-align: center;
+}
+
+.btn {
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: rgb(1 60 0);
+    color: white;
+    margin: 17px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    padding: 6px 20px;
+    border: 2px solid rgb(1 60 0);
+    background-color: white;
+    color: rgb(1 60 0);
+    margin: 17px;
+    font-size: 1.5rem;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+
+/* FOOTER */
+footer {
+    position: bottom;
+    background: black;
+    color: white;
+    padding: 9px 20px;
+    font-size: 1.3rem;
+}
+
+footer .content {
+    display: flex;
+    padding: 5px 5px;
+}
+
+footer .content .address {
+    text-align: center;
+    width: 48%;
+}
+
+footer .content .address ul {
+    list-style: none;
+    text-decoration: none;
+}
+
+footer .content .address ul a {
+    text-decoration: none;
+    color: white;
+}
+
+footer .content .social-media {
+    text-align: center;
+    width: 48%;
+}
+
+footer .content .social-media h1 {
+    text-align: center;
+    display: block;
+    font-size: 1rem;
+
+}
+
+footer .content .social-media ul {
+    justify-content: center;
+    list-style: none;
+    display: flex;
+}
+
+footer .content .social-media a {
+    font-size: 3rem;
+    padding: 3px 10px;
+    text-decoration: none;
+    color: white;
+}
+
+footer .content .social-media a:hover {
+    font-size: 3rem;
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    border-radius: 5px;
+}
+
+footer .content .back-to-top {
+    vertical-align: center;
+    text-align: center;
+    list-style: none;
+    width: 8%;
+    font-size: 4rem;
+}
+
+footer .content .back-to-top a {
+    text-decoration: none;
+    color: white;
+    padding: 3px 7px;
+    border-radius: 10px;
+}
+
+footer .content .back-to-top a:hover {
+    text-decoration: none;
+    color: black;
+    background-color: white;
+}
+
+footer .copyright {
+    text-align: center;
+}
