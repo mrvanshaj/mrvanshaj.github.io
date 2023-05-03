@@ -1,0 +1,101 @@
+body {
+    background-color: rgba(157, 192, 139,0.9);
+}
+
+.container {
+    color: rgb(64, 81, 59);
+    font-size: 39px;
+    text-align: center;
+}
+
+.container .imageContainer {
+    /* background-color: red; */
+    display: grid;
+    justify-content: space-evenly;
+    row-gap: 10px;
+    grid-template-columns: auto auto auto auto;
+}
+
+.container .imageContainer img {
+    height: 216px;
+    width: 384px;
+    /* height: 100%; */
+    border: 5px solid white;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    object-fit: cover;
+    transition: .2s linear;
+}
+
+.container .imageContainer img:hover {
+    transform: scale(1.1);
+}
+
+.container .openImage {
+    position: fixed;
+    top: 0;
+    left: 0;
+    /* background-color: rgba(0, 0, 0, 0.9); */
+    /* background-color: rgba(168, 159, 159, 0.9); */
+    background-color: rgb(237, 241, 214,0.9);
+    height: 100%;
+    width: 100%;
+    z-index: 100;
+    display: none;
+
+}
+
+.container .openImage .buttons{
+    /* background-color: blue; */
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    font-size: 40px;
+    font-weight: bolder;
+    color: rgb(64, 81, 59);
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.container .openImage .buttons a{
+    color: inherit;
+}
+.container .openImage .buttons span{
+    /* background-color: pink; */
+    padding: 10px 20px;
+    font-size: 50px;
+}
+.container .openImage .buttons .button:hover{
+    color: white;
+    background-color: rgb(64, 81, 59);
+    border-radius: 5px;
+}
+.container .openImage .nav_button{
+    position: absolute;
+    top:50%;
+    color: rgb(64, 81, 59);
+    font-size: 50px;
+    padding: 10px 20px;
+}
+#leftArrow{
+    left:70px
+}
+#rightArrow{
+    right:70px
+}
+.container .openImage .nav_button:hover{
+    color: white;
+    background-color: rgb(64, 81, 59);
+    border-radius: 100%;
+}
+.container .openImage img{
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+    height: 80%;
+    width: 80%;
+    border: 5px solid white;
+
+}
